@@ -1,3 +1,10 @@
+/*
+ * Public interface
+ */
+
+/* So you can 'var compare = require('version-comparator')' */
+module.exports = compare;
+
 /**
  * Compares two software version numbers (e.g. "1.7.1" or "1.2b").
  *
@@ -63,5 +70,3 @@ function compare (v1, v2, options) {
 
   return 'equal'
 }
-
-export { compare }

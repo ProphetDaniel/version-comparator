@@ -1,7 +1,7 @@
-import * as version from '../version-compare.js'
+import compare from '../version-compare.js'
 
 function checkExpected (versionA, versionB, expectedResult) {
-  let wasExpectationFullfiled = version.compare(versionA, versionB) === expectedResult
+  let wasExpectationFullfiled = compare(versionA, versionB) === expectedResult
   console.assert(wasExpectationFullfiled, 'Version ' + versionA + ' should be ' + expectedResult + ((expectedResult === 'equal') ? ' to ' : ' than ') + versionB)
   if (wasExpectationFullfiled) { return '\u2713' }
 }
