@@ -1,6 +1,6 @@
 {
   "name": "version-comparator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Function to compare two version strings (e.g. \"1.6.1\" is smaller than \"1.7\"). Developed in order to answer http://stackoverflow.com/a/6832721/50079.",
   "main": "version-compare.js",
   "scripts": {
