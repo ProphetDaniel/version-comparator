@@ -1,8 +1,15 @@
 import compare from '../version-compare.js'
 
+function fromNumberToString(number){
+  if (number === 1)
+    return "greater"
+  if (number === -1)
+    return "lower"
+  return "equal"
+}
 function checkExpected (versionA, versionB, expectedResult) {
-  let wasExpectationFullfiled = compare(versionA, versionB) === expectedResult
-  console.assert(wasExpectationFullfiled, 'Version ' + versionA + ' should be ' + expectedResult + ((expectedResult === 'equal') ? ' to ' : ' than ') + versionB)
+  let wasExpectationFullfiled = fromNumberToString(compare(versionA, versionB)) === expectedResult
+  console.assert(wasExpectationFullfiled, 'Version ' + versionA + ' should be ' + expectedResult + ((expectedResult === "equal") ? ' to ' : ' than ') + versionB)
   if (wasExpectationFullfiled) { return '\u2713' }
 }
 
