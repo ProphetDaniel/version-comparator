@@ -29,6 +29,11 @@ function testOne(){
 testOne()
 
 async function testTwo(){
+  function processLongVersion(longVersionString){
+    let cut = longVersionString.substring(0,longVersionString.indexOf("+"))
+    let replacedNightly = cut.replace('-nightly', '')
+    return replacedNightly
+  }
   let unsortedReadList = await readFileStream("./test/pseudoOrderedList.csv")
   let sortedReadList = await readFileStream("./test/orderedList.csv")
   let sortedList = unsortedReadList.sort((a,b) => compare(processLongVersion(a), processLongVersion(b)))
@@ -38,9 +43,3 @@ async function testTwo(){
   // writeFileStream("./test/orderedList.csv", sortedList)
 }
 testTwo()
-
-function processLongVersion(longVersionString){
-  let cut = longVersionString.substring(0,longVersionString.indexOf("+"))
-  let replacedNightly = cut.replace('-nightly', '')
-  return replacedNightly
-}
