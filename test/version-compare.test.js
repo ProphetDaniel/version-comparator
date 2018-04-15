@@ -1,5 +1,4 @@
 import * as version from '../version-compare.js'
-require('babel-register')
 
 function checkExpected (versionA, versionB, expectedResult) {
   let wasExpectationFullfiled = version.compare(versionA, versionB) === expectedResult
