@@ -1,6 +1,6 @@
 {
   "name": "version-comparator",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "Function to compare two version strings (e.g. \"1.6.1\" is smaller than \"1.7\"). Developed in order to answer http://stackoverflow.com/a/6832721/50079.",
   "main": "version-compare.js",
   "scripts": {
@@ -26,12 +26,14 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
+    "es7-sleep": "^1.0.0",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.7.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint-plugin-standard": "^3.0.1",
+    "fast-csv": "^2.4.1"
   },
   "dependencies": {}
 }
