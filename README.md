@@ -14,9 +14,9 @@ Forked from: https://gist.githubusercontent.com/TheDistantSea/8021359
 - **zeroExtend**: ([true]/false) changes the result if one version string has less parts than the other. In this case the shorter string will be padded with "zero" parts instead of being considered smaller.
 
 > @returns {number|NaN}
-- **0** if the versions are equal
-- a **negative** integer if v1 < v2
-- a **positive** integer if v1 > v2
+- `equal` if the versions are equal
+- `lower` if v1 < v2
+- `greater` if v1 > v2
 - **NaN** if either version string is in the wrong format
  
  
