@@ -1,7 +1,7 @@
 # Version compare
 Compares two software version numbers  (e.g. "1.7.1" or "1.2b").
 
-Forked from: https://gist.githubusercontent.com/TheDistantSea/8021359
+Forked from: https://github.com/Rombecchi/version-compare
 
 
 > @param {string} **v1** The first version to be compared.

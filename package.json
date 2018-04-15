@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/ProphetDaniel/version-compare.git"
+    "url": "git+ssh://git@github.com:ProphetDaniel/version-comparator.git"
   },
   "keywords": [
     "version",
@@ -18,9 +18,9 @@
   "author": "Prophet Daniel",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ProphetDaniel/version-compare/issues"
+    "url": "https://github.com/ProphetDaniel/version-comparator/issues"
   },
-  "homepage": "https://github.com/ProphetDaniel/version-compare#readme",
+  "homepage": "https://github.com/ProphetDaniel/version-comparator#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.26.0",
